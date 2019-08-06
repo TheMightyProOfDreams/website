@@ -5,9 +5,12 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<style>
 		#myfooter {
 			background-color: lightgray;
@@ -33,6 +36,7 @@
 			margin-top: -20vh;
 			border: #34ebeb 3px solid;
 			 }
+
 	</style>
 </head>
 <body>
@@ -87,71 +91,80 @@
 
 		</div>
 	</div>
-	
+
+    <!-- sm md lg -->
+
+	<div class="container mt-3 mb-5">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 col-lg-4 text-center">
+				slav
+				<canvas id="myChart1"></canvas>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4  text-center mt-1">
+				pro genji
+				<canvas id="myChart2"></canvas>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4  text-center mt-1">
+				mlg
+				<canvas id="myChart3"></canvas>
+			</div>
+		</div>
+	</div>
 
 
-	<div class="container mt-3">
+	<div class="container mt-3" >
 		<div class="card-columns">
-		  <div class="card">
+		  <div class="card" data-aos="fade-right" data-aos-duration="500">
 		    <img src="weed.jpg" class="card-img-top" alt="...">
 		    <div class="card-body">
 		      <h5 class="card-title">bigmike6322 is fast as fck boi</h5>
 		      <p class="card-text"> lol actually not he boosted bonobo XDddD</p>
 		    </div>
 		  </div>
-		  <div class="card p-3">
+		  <div class="card p-3" >
 		    <blockquote class="blockquote mb-0 card-body">
-		      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+		      <p>this be useful lateruski</p>
 		      <footer class="blockquote-footer">
 		        <small class="text-muted">
-		          Someone famous in <cite title="Source Title">Source Title</cite>
+		          god himself
 		        </small>
 		      </footer>
 		    </blockquote>
 		  </div>
-		  <div class="card">
+		  <div class="card" data-aos="fade-up" data-aos-duration="500">
 		    <img src="weed2.jpg" class="card-img-top" alt="...">
 		    <div class="card-body">
 		      <h5 class="card-title">i smoke ur trees cyka</h5>
 		      <p class="card-text">your trees are my trees blyat</p>
-		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		      <p class="card-text"><small class="text-muted">always updating cyka blyat</small></p>
 		    </div>
 		  </div>
 		  <div class="card bg-primary text-white text-center p-3">
 		    <blockquote class="blockquote mb-0">
-		      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+		      <p>kurwa</p>
 		      <footer class="blockquote-footer text-white">
 		        <small>
-		          Someone famous in <cite title="Source Title">Source Title</cite>
+		        	<cite title="some pro genji">some pro genji</cite>
 		        </small>
 		      </footer>
 		    </blockquote>
 		  </div>
-		  <div class="card text-center">
-		    <div class="card-body">
-		      <h5 class="card-title">Card title</h5>
-		      <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		  <div class="card" data-aos="fade-left" data-aos-duration="500">
+		    <img src="brainhead.png" class="card-img-top" alt="...">
+		     <div class="card-body">
+		     <h5 class="card-title">This is brainhead. This is you 69 years later.</h5>
+			 <footer class="blockquote-footer">
+		     <small class="text-muted">
+		     	Someone famous called Albert Wu
+		     </small>
 		    </div>
 		  </div>
-		  <div class="card">
-		    <img src="brainhead.png" class="card-img-top" alt="...">
-		  </div>
-		  <div class="card p-3 text-right">
-		    <blockquote class="blockquote mb-0">
-		      <p>This is brainhead. This is you 69 years later.</p>
-		      <footer class="blockquote-footer">
-		        <small class="text-muted">
-		          Someone famous called Albert Wu
-		        </small>
-		      </footer>
-		    </blockquote>
-		  </div>
+
 		  <div class="card">
 		    <div class="card-body">
-		      <h5 class="card-title">Card title</h5>
-		      <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		      <h5 class="card-title">albert</h5>
+		      <p class="card-text">albert wu > albert einstein</p>
+		      <p class="card-text"><small class="text-muted">never updated</small></p>
 		    </div>
 		  </div>
 		</div>	
@@ -205,5 +218,53 @@
 
 	</footer>
 	<!-- Footer -->
+<script>
+	var ctx = document.getElementById('myChart1').getContext('2d');
+	var myDoughnutChart = new Chart(ctx, {
+	    type: 'doughnut',
+	    data: {
+	    datasets: [{
+	        data: [100, 0],
+	        backgroundColor: ["Red", "gray"],
+	        hoverBackgroundColor: ["brown", "darkgray"]
+	    }],
+	    labels: [
+		        'slav',
+		    ]
+		},
+	});
+	var ctx = document.getElementById('myChart2').getContext('2d');
+	var myDoughnutChart = new Chart(ctx, {
+	    type: 'doughnut',
+	    data: {
+	    datasets: [{
+	        data: [83, 17],
+	        backgroundColor: ["lightgreen", "green"],
+	        hoverBackgroundColor: ["green", "darkgreen"]
+	    }],
+	    labels: [
+		        'pro genji',
+		        'even more pro genji'
+		    ]
+		},
+	});
+	var ctx = document.getElementById('myChart3').getContext('2d');
+	var myDoughnutChart = new Chart(ctx, {
+	    type: 'doughnut',
+	    data: {
+	    datasets: [{
+	        data: [20, 20, 20, 20, 20],
+	        backgroundColor: ["Red","Yellow","green", "Blue", "purple"],
+	        hoverBackgroundColor: ["brown", "gold", "darkgreen", "darkblue" ,"purple"]
+	    }],
+		    labels: [
+		        'M',
+		        'L',
+		        'G',
+		    ]
+		},
+	});
+	AOS.init();
+</script>
 </body>
 </html>
